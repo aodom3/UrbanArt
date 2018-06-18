@@ -1,0 +1,378 @@
+/*links no underline*/
+
+a:link {
+	text-decoration: none;
+}
+/*pictures move*/
+
+a:hover {
+	transform: rotate(15deg);
+}
+.title {
+	position: fixed;
+}
+/*-----modal, first page----*/
+
+.button {
+	background-color: red;
+	border-radius: 10%;
+	padding: 1em 2em;
+	color: yellow;
+	font-weight: bold;
+	font-size: 17px;
+	border: 0;
+}
+.button:hover {
+	background-color: teal;
+	cursor: pointer;
+}
+/*background of modal*/
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 127, 80, 0.8);
+}
+.modalContent {
+	background-color: black;
+	color: yellow;
+	margin: 10%;
+	padding: 15px;
+	width: 35%;
+	box-shadow: 0 9px 5px 0 rgba(96, 96, 96, 0.4);
+	animation-name: open;
+	animation-duration: 1s;
+}
+.closeButton {
+	float: right;
+	font-size: 35px;
+	font-weight: bold;
+}
+.closeButton:hover {
+	color: purple;
+	cursor: pointer;
+}
+/*pretty fade in of modal*/
+
+@keyframes open {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1
+	}
+}
+body {
+	/*margin: 0px;*/
+	color: #F0E2DB;
+	background: url("../images/dwall.jpg");
+}
+/*only for opening page*/
+
+#bodyHome {
+	background-color: black;
+}
+/*photograph like background. home page */
+
+.splash {
+	background-image: url("../images/atl.png");
+	/* original plain image www.nyccastings.com/cathy-reiking-
+	csa-on-moving-to-booming-atlanta/.  edited by Ashley Odom in photoshop*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fffdfc;
+	border: #fffdfc solid;
+	margin: 30px;
+	height: 550px;
+	width: 1250px;
+	z-index: -1;
+}
+/*pictures in list*/
+
+li {
+	height: 40px;
+	width: 50px;
+	display: inline;
+	padding: 10px;
+}
+ul.homepics li a {
+	list-style-type: none;
+	/*justify-content: space-around;*/
+	float: left;
+	background: #fffdfc;
+	margin-bottom: 35px;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding: 10px 10px 6px 10px;
+	position: relative;
+}
+ul.homepics li a.org {
+	z-index: 3;
+	transform: 10deg;
+}
+ul.homepics li a.krog {
+	z-index: 1;
+}
+ul.homepics li a.five {
+	z-index: 5;
+}
+ul.homepics li a.special {
+	z-index: 2;
+}
+ul.homepics li a.see {
+	z-index: 4;
+}
+ul.homepics li a.spot {
+	z-index: 6;
+}
+h1 {
+	font-size: 45px;
+	color: white;
+	letter-spacing: 2px;
+	font-family: 'Do Hyeon', sans-serif;
+	text-align: center;
+	border-radius: 20% box-shadow:10px 5px;
+}
+h2 {
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: orange;
+}
+p {
+	font-size: 18px;
+	letter-spacing: 2px;
+	background-color: rgba(0, 0, 0, 0.8);
+	font-family: 'Open Sans', sans-serif;
+}
+h3 {
+	color: orange;
+	font-family: 'Open Sans', sans-serif
+}
+h4 {
+	font-size: 22px;
+	letter-spacing: 2px;
+	color: black;
+	text-align: center;
+	font-family: 'Rock Salt', cursive;
+}
+/*-----artist spotlight---------*/
+
+.don {
+	display: flex;
+	margin: 10px;
+}
+#donpic {
+	/*background: #fffdfc;*/
+	padding: 10px 10px 30px 10px;
+	position: relative;
+	width: 622px;
+	height: 500px;
+	transform: rotate(-5deg);
+}
+
+#donparagraph {
+	width: 450px;
+}
+.iconbar {
+	align-content: center;
+}
+.donpics {
+	align-items: flex-start;
+	margin: 15px;
+	align-content: center;
+}
+/*--pictures on organization page, artlanta section--*/
+
+.artpics {
+	display: flex;
+	justify-content: space-around;
+}
+#p1 {
+	background: #fffdfc;
+	padding: 10px 10px 30px 10px;
+	position: relative;
+}
+#p2 {
+	background: #fffdfc;
+	padding: 10px 10px 30px 10px;
+	position: relative;
+}
+#p3 {
+	background: #fffdfc;
+	padding: 10px 10px 30px 10px;
+	position: relative;
+}
+/*--pictures on organization page, articulate atlanta section--*/
+
+.artlanta {
+	background-color: rgb(0, 0, 0, 0.5);
+}
+.articulatepics {
+	display: flex;
+	justify-content: space-around;
+}
+#pp1 {
+	background: #fffdfc;
+	padding: 10px 10px 30px 10px;
+	position: relative;
+}
+#pp2 {
+	background: #fffdfc;
+	padding: 10px 10px 30px 10px;
+	position: relative;
+}
+#pp3 {
+	background: #fffdfc;
+	padding: 10px 10px 30px 10px;
+	position: relative;
+}
+/*----pictures on event page-----*/
+
+#shawn {
+	background: #fffdfc;
+	padding: 10px 10px 30px 10px;
+	position: relative;
+}
+
+/*-----------calendar on event page------------*/
+
+/*.calendar {
+	text-align: center*//*;
+}*/
+.calendar header {
+	position: relative;
+}
+.calendar tbody td:hover {
+	border: solid #EC7220;
+}
+.calendar td {
+	display: inline-block;
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 50%;
+}
+/*--main picture on krog street page--*/
+
+#krog {
+	background-image: url("../images/krog1.jpg");
+	/*padding: 10px 10px 30px 10px*/;
+	position: relative;
+	width: 970px;
+	height:472px;
+	margin: 0;
+}
+
+/*}*/
+#krog:hover{
+	background-image:url("../images/k5.jpg") 
+}
+
+.points {
+	padding: -1000px;
+	margin-right: 500px;
+	background: url("../images/fire.jpg") background-repeat:no-repeat;
+	/*--main picture on l5p page--*/
+	}
+	#l5p {
+		background: #fffdfc;
+		padding: 10px 10px 30px 10px;
+		position: relative;
+	}
+	/*rest of page-------- */.main {
+		/*margin-left: 300px;*/
+		height: 100%
+	}
+	.container {
+		display: inline-block;
+	}
+
+	.beltlinepics {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin: 35px;
+	align-content: center;
+	
+}
+
+
+	#clockpick{
+		width: 40%;
+	}
+	
+	.wrapper {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.wrapper>* {
+		padding: 10px;
+		flex: 1 100%;
+	}
+	/*header and nav*/
+	.header {
+		background-image: url(../images/graf.jpg);
+		height:200px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.navigation {
+		background-color: #ffff7f;
+		color: white;
+	}
+	ul.nav{
+		color: white;
+		margin: 0;
+		font-size: 20px;
+		text-align: center
+	}
+	/*dude*/
+.clock{
+	display:flex;
+}
+#clockpick{
+	width: 325px;
+
+}
+#clockparagraph{
+	flex:1;
+/*castleberry hills*/
+}
+.castle{
+	display:flex;
+}
+#castlepic{
+	width: 815px;
+
+}
+#castleparagraph{
+	flex:1;
+
+}
+/*pancakes and booze*/
+#pancakes{
+	display: flex;
+}
+.booze{
+	width: 760px;
+}
+.boozeparagraph{
+	flex:1;
+}
+	.footer {
+		position: absolute 0;
+		width: 100%;
+		bottom: 0;
+		text-align: center;
+		background-color: black;
+	}
+	
