@@ -1,7 +1,8 @@
 # UrbanArt
 Basic website made for a final project in Codebridge Program. I chose to do a site about art since it is a passion of mine. The site shows grafitti throughtout the city of Atlanta as well as art events going on in the city.
 ## Screenshots of Site
-![wireframe](images/wireframe.jpg "Wireframe of project")
+![screenshot](images/screenshot.jpg "Screenshot of project")
+![screenshot](images/screenshot2.jpg "2nd Screenshot of project")
 ## Technologies Used
 1. HTML
 2. CSS
